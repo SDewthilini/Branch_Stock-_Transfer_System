@@ -77,11 +77,11 @@ The controller tests use a separate EF Core InMemory database for each test, so 
 
 - UI Action State Management: Transfer actions are dynamically restricted based on the current status to maintain workflow integrity:
 
-Requested: Users can either Dispatch or Cancel the transfer.
+  Requested: Users can either Dispatch or Cancel the transfer.
 
-Dispatched: Cancellation is locked; the only available action is Receive (which also supports the optional partial/damaged goods recording flow).
+  Dispatched: Cancellation is locked; the only available action is Receive (which also supports the optional partial/damaged goods recording flow).
 
-Received / Cancelled: These are terminal states where no further actions can be performed.
+  Received / Cancelled: These are terminal states where no further actions can be performed.
 
 - All business logic and transfer rules came from the assignment brief. Every design decision in this project was made by me according to those requirements, and I designed the database table structure myself.
 
